@@ -1,0 +1,19 @@
+.app{
+    height: 100vh;
+}
+.sections{
+    width: 100%;
+    background-color: rgb(214, 187, 176);
+    position: relative;
+    top: 70px;
+    scroll-behavior: smooth;}
+    ::-webkit-scrollbar{
+        display: none;
+    }
+.Intro,
+.portfolio,
+.Works,
+.Testimonials,
+.Concat{
+    height: calc(100vh - 70px);
+}

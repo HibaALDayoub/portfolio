@@ -1,0 +1,174 @@
+.Intro{
+    background-color: white;
+    display: flex;
+}
+@media (max-width: 768px) {
+    .Intro{
+        height: 43vh;
+    }
+}
+.Intro .left{
+    flex: 0.5;
+    overflow: hidden;
+}
+@media (max-width: 768px) {
+    .Intro .left{
+        flex: 0.5 1;
+    }
+    .Intro .right{
+        flex: 0.6;
+
+    }
+}
+.Intro .left .imgContainer{
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+
+}
+@media (max-width: 992px) {
+    .Intro .left .imgContainer {
+        width: 500px;
+        height: 500px;
+    }
+}
+@media (max-width: 768px) {
+    .Intro .left .imgContainer {
+        width: 300px;
+        height: 300px;
+    }
+}
+.Intro .left img{
+    border-radius: 37%;
+    height: 90%;
+}
+.Intro .right{
+    flex: 0.5;
+    position: relative;
+    
+
+}
+.Intro .right .wrapper{
+    width: 100%;
+    height: 100%;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.Intro .right .wrapper h1{
+    font-size: 60px;
+    margin: 10px 0;
+}
+.Intro .right .wrapper h2{
+    font-size: 35px;
+}
+.Intro .right .wrapper h3{
+    font-size: 30px;
+}
+.Intro .right .wrapper h3 .ityped-cursor {
+    animation: blink 1s infinite;
+}
+@keyframes blink{
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.Intro .right .wrapper h3 span{
+    color: rgb(121, 115, 115);
+    font-size: 30px;
+}
+@media (max-width: 992px) {
+    .Intro .right .wrapper h1 {
+        font-size: 43px;
+    }
+    .Intro .right .wrapper h3 {
+        font-size: 30px;
+    }
+    .Intro .right .wrapper h2{
+        font-size: 33px;
+    }
+}
+@media (max-width: 768px) {
+    .Intro .right .wrapper{
+        position: relative;
+        left: -26%;
+    }
+    .Intro .right .wrapper h1 {
+        font-size: 34px;
+    }
+    .Intro .right .wrapper h3 {
+        font-size: 23px;
+    }
+    .Intro .right .wrapper h2{
+        font-size: 23px;
+    }
+    .Intro .right .wrapper h3 span{
+        font-size: 20px;
+    }
+}
+@media (max-width: 638px) {
+    .Intro .right .wrapper{
+        position: relative;
+        left: -26%;
+    }
+    .Intro .right .wrapper h1 {
+        font-size: 25px;
+        padding: 14px 0;
+    }
+    .Intro .right .wrapper h3 {
+        font-size: 17px;
+    }
+    .Intro .right .wrapper h2{
+        font-size: 23px;
+    }
+    .Intro .right .wrapper h3 span{
+        font-size: 15px;
+    }
+}
+@media (max-width: 430px) {
+    .Intro .right .wrapper{
+        position: relative;
+        left: -26%;
+    }
+    .Intro .right .wrapper h1 {
+        font-size: 15px;
+        padding: 9px 0;
+    }
+    .Intro .right .wrapper h3 {
+        font-size: 11px;
+    }
+    .Intro .right .wrapper h2{
+        font-size: 13px;
+    }
+    .Intro .right .wrapper h3 span{
+        font-size: 10px;
+    }
+}
+.Intro .right a{
+    position: absolute;
+    bottom: 10px;
+
+    left: 40%;
+    width: 50%;
+    font-size: 40px;
+    color: rgb(121, 115, 115);;
+    animation: arrowBlink 2s infinite;
+}
+@keyframes arrowBlink {
+    100%{
+        opacity: 0.2;
+    }
+}
+@media (max-width: 430px) {
+    .Intro .right a{
+        top: 76%;
+    }
+}

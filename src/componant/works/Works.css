@@ -1,0 +1,152 @@
+@import "../../global.css";
+
+.Works {
+    background-color:rgb(250, 244, 245);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.Works .arrow {
+    height: 50px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.Works .ll {
+    left: 100px;
+}
+.Works .rr {
+    right: 100px;
+}
+.Works .ll ,
+.Works .rr {
+    width: 35px;
+    color:rgb(121, 115, 115);
+}
+@media (max-width: 960px) {
+    .Works .arrow {
+        display: none;
+    }
+}
+.Works .slider {
+    height: 400px;
+    display: flex;
+    position: absolute;
+    left: 0;
+    transition: all 1s ease-out;
+}
+@media (max-width: 960px) {
+    .Works .slider {
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+}}
+.Works .container{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Works .container .item {
+    width: 750px;
+    height: 100%;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width: 940px) {
+    .Works .container .item {
+        width: 80%;
+        height: 150px;
+        margin: 15px 0;
+}}
+.Works .container .item .left {
+    flex: 4;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Works .container .item .left .leftContainer {
+    width: 90%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+@media (max-width: 960px) {
+    .Works .container .item .left .leftContainer {
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-around;
+    }}
+
+.Works .container .item .left .leftContainer .imgContainer {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(245, 179, 155);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Works .container .item .left .leftContainer .imgContainer img {
+    width: 25px;
+}
+.Works .container .item .left .leftContainer h2 {
+    font-size: 20px;
+}
+@media (max-width: 960px) {
+    .Works .container .item .left .leftContainer {
+        flex-direction: column;
+        justify-content: space-between;}
+}
+.Works .container .item .left .leftContainer p {
+    font-size: 13px;
+}
+@media (max-width: 960px) {
+    .Works .container .item .left .leftContainer .imgContainer{
+    width: 20px;
+    height: 20px;}
+    .Works .container .item .left .leftContainer .imgContainer img {
+        width: 15px;
+    }
+    .Works .container .item .left .leftContainer h2 {
+        font-size: 9px;
+    }
+    .Works .container .item .left .leftContainer p {
+        display: none;
+    }
+
+}
+.Works .container .item .left .leftContainer span {
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.Works .container .right {
+    flex: 8;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.Works .container .right img {
+    width: 400px;
+    transform: rotate(-10deg);
+}
+@media (max-width: 960px) {
+    .Works .container .right img {
+        width: 357px;
+        height: 200px;
+        transform: rotate(-7deg);
+    }}
+@media (max-width: 500px) {
+    .Works .container .right img {
+        transform: rotate(17deg);
+}}

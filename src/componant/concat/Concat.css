@@ -1,0 +1,86 @@
+@import "../../global.css";
+
+.contact {
+    background-color: white;
+    display: flex;
+    height: calc(100vh - 70px);
+}
+@media (max-width: 768px) {
+    .contact {
+        flex-direction: column;
+        padding-top: 30px;
+        padding-bottom: 53%;
+    }
+}
+.contact .left {
+    flex: 1;
+    overflow: hidden;
+}
+.contact .left img {
+    height: 90%;
+    padding: 10px;
+    border-radius: 20%;
+    padding-left: 20px;
+}
+.contact .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contact .right h2 {
+    font-size: 30px;
+}
+.contact .right form {
+    width: 70%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.contact .right form input {
+    width: 300px;
+    height: 30px;
+    font-size: 14px;
+    border: 1.5px solid #ed143d7d;
+}
+.contact .right form textarea {
+    width: 300px;
+    height: 200px;
+    font-size: 14px;
+    border: 1.5px solid #ed143d7d;
+}
+.contact .right form textarea:focus,
+.contact .right form input:focus{
+    outline: none;
+    border: 1.8px solid #ed143cbd;
+    color: rgb(121, 115, 115);;
+} 
+@media (max-width: 768px) {
+    .contact .right form input {
+        width: 200px;
+        height: 20px;
+    }
+    .contact .right form textarea{
+        width: 200px;
+        height: 100px;
+    }
+}
+.contact .right form button {
+    width: 150px;
+    height: 30px;
+    color: white;
+    background-color: crimson;
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.contact .right form button:focus {
+    outline: none;
+}
+.contact .right form span {
+    color: green;
+}

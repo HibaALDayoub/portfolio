@@ -1,0 +1,20 @@
+@import "../../global.css"; 
+
+.portfolioList{
+  font-size: 14px;
+  margin-right: 50px;
+  padding: 7px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+@media (max-width: 620px) {
+  .portfolioList{
+    margin-right: 20px;
+  }}
+.portfolioList .active {
+    background-color: var(--main-color);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
